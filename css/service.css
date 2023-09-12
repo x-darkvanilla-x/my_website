@@ -1,0 +1,33 @@
+.service
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.service .c1
+{
+    flex: 20%;
+    margin: 50px 50px 0px 50px;
+    text-align: center;
+    color: #333;
+    text-align: left;
+    line-height: 30px;
+}
+
+.service .c1 img
+{
+    height: 50px;
+    width: 50px;
+    margin: 0;
+}
+
+.service_content
+{
+    padding: 50px 50px 0px 50px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}

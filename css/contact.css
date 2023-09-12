@@ -1,0 +1,222 @@
+.contacts
+{
+    height: auto;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.contacts h1
+{
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 50px 0px 0px 50px;
+}
+
+.contacts .contacts_left_side li
+{
+    list-style: none;
+    margin: 20px;
+    text-transform: lowercase;
+}
+
+.contacts .contacts_left_side
+{
+    width: 40%;
+    height: 400px;
+    margin-left: 10%;
+}
+
+.contacts .contacts_right_side
+{
+    width: 40%;
+    margin-left: 5%;
+}
+
+.contacts_container
+{
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.contacts .inputs
+{
+    width: 80%;
+    height: 40px;
+    margin: 20px;
+    padding-left: 30px;
+    border: none;
+    background-color: rgb(222, 217, 217);
+}
+
+.contacts .submit_button
+{
+    width: 40%;
+    height: 40px;
+    margin: 20px;
+    border: none;
+    background-color: rgb(222, 217, 217);
+}
+
+.contacts .input_message
+{
+    width: 80%;
+    height: 90px;
+    margin: 20px;
+    padding-left: 30px;
+    padding-top: 20px;
+    border: none;
+    background-color: rgb(222, 217, 217);
+}
+
+
+@keyframes lefttoright
+{
+    from {right: 300px;}
+    to {right: 0px}
+}
+
+@keyframes righttoleft
+{
+    from {right: -300px; position: absolute; display: none; opacity: 0.5;}
+    to {right: 0px; position: relative; display: block; opacity: 1;}
+}
+
+
+.contacts h1{
+    animation: lefttoright 3s;
+    animation-timing-function: ease;
+    position: relative;
+}
+
+.contacts_container .contacts_left_side 
+{
+    animation: lefttoright 3s;
+    animation-timing-function: ease;
+    position: relative;
+}
+
+.contacts_container .contacts_right_side 
+{
+    animation: righttoleft 3s;
+    animation-timing-function: ease;
+    position: relative;
+}
+
+
+
+@media screen and (max-width: 600px) 
+{
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+    .contacts_container
+    {
+        display: block;
+    }
+
+    .contacts .contacts_right_side
+    {
+        width: 90%;
+        margin-top: 20%;
+    }
+
+    .contacts .contacts_left_side
+    {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)  and  (max-width: 768px)
+{
+    .contacts_container
+    {
+        display: block;
+    }
+
+    .contacts .contacts_right_side
+    {
+        width: 97%;
+        margin-top: 20%;
+    }
+
+    .contacts .contacts_left_side
+    {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+{
+
+    .contacts_container
+    {
+        display: flex;
+    }
+
+    .contacts .contacts_left_side
+    {
+        width: 40%;
+        height: 400px;
+        margin-left: 8%;
+    }
+
+    .contacts .contacts_right_side
+    {
+        width: 40%;
+        margin-left: 5%;
+    }
+} 
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+    .contacts_container
+    {
+        display: flex;
+    }
+
+    .contacts .contacts_left_side
+    {
+        width: 40%;
+        height: 400px;
+        margin-left: 10%;
+    }
+
+    .contacts .contacts_right_side
+    {
+        width: 40%;
+        margin-left: 5%;
+    }
+} 
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+    .contacts_container
+    {
+        display: flex;
+    }
+
+    .contacts .contacts_left_side
+    {
+        width: 40%;
+        height: 400px;
+        margin-left: 10%;
+    }
+
+    .contacts .contacts_right_side
+    {
+        width: 40%;
+        margin-left: 5%;
+    }
+}

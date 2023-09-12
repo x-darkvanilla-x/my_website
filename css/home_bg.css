@@ -1,0 +1,228 @@
+.myself
+{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    text-shadow: 2px 2px whitesmoke;
+}
+
+.myself .content{
+    padding: 100px 100px;
+    color :#333;
+}
+
+.myself .content h1
+{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.myself .content button
+{
+    width: 40%;
+    height: 40px;
+    margin: 20px 0px;
+    background-color: transparent;
+    border-color: #333;
+}
+
+.myself .content
+{
+    position: relative;
+}
+
+.typing::before
+{
+    content: "Graphic";
+}
+
+#home_content
+{
+    opacity: 0;
+}
+
+@keyframes mymove
+{
+    from {top: 100px; opacity: 0;}
+    to {top: 0px; opacity: 1;}
+}
+
+@keyframes type {
+
+    0% {
+        content: "G|";
+    }
+
+    5% {
+        content: "Gr|";
+    }
+
+    10% {
+        content: "Gra|";
+    }
+
+    15% {
+        content: "Grap|";
+    }
+
+    20% {
+        content: "Graph|";
+    }
+
+    25% {
+        content: "Graphi|";
+    }
+
+    30% {
+        content: "Graphic|";
+    }
+
+    35% {
+        content: "Graphic";
+    }
+
+    40% {
+        content: "Graphi|";
+    }
+
+    45% {
+        content: "Graph|";
+    }
+
+    50% {
+        content: "Grap|";
+    }
+
+    55% {
+        content: "Gra|";
+    }
+
+    60% {
+        content: "Gr|";
+    }
+
+    65% {
+        content: "G|";
+    }
+
+    70% {
+        content: "|";
+    }
+
+    75% {
+        content: "W|";
+    }
+
+    80% {
+        content: "We|";
+    }
+
+    85% {
+        content: "Web|";
+    }
+
+    90% {
+        content: "Web";
+    }
+
+    95% {
+        content: "We|";
+    }
+
+    100% {
+        content: "W|";
+    }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+    .myself
+    {
+        background-image: url('../background/mobile.jpg');
+    }
+
+    .myself .content{
+        padding: 100px 70px;
+    }
+
+    .myself .content h1
+    {
+        font-size: 50px;
+    }
+}
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+    .myself
+    {
+        background-image: url('../background/big_phone.jpg');
+    }
+
+    .myself .content{
+        padding: 200px 80px;
+    }
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    .myself
+    {
+        background-image: url('../background/Tablets.jpg');
+    }
+
+    .myself .content{
+        padding: 100px 80px;
+    }
+
+    .myself .content h1
+    {
+        font-size: 50px;
+    }
+
+    .typing::before {
+        animation: type infinite 5s ease;
+        padding-left: 10px;
+    }
+} 
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+    .myself
+    {
+        background-image: url('../background/Big_screens.jpg');
+    }
+
+    .myself .content{
+        padding: 100px 100px;
+    }
+
+    .typing::before 
+    {
+        animation: type infinite 5s ease;
+        padding-left: 10px;
+    }
+
+} 
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+    .myself
+    {
+        background-image: url('../background/Big_screens.jpg');
+    }
+
+    .myself .content{
+        padding: 100px 100px;
+    }
+
+    .typing::before {
+        animation: type infinite 5s ease;
+        padding-left: 10px;
+    }
+}

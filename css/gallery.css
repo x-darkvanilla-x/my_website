@@ -1,0 +1,99 @@
+.maincon .container{
+    flex-flow: column wrap;
+    width: 100%;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.maincon .container .image
+{
+    width: 80%;
+    height: auto;
+}
+
+.maincon
+{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+}
+
+.gallery button
+{
+    width: 40%;
+    height: 40px;
+    margin: 20px 0px;
+    background-color: transparent;
+    border-color: #333;
+}
+
+.maincon .container img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+
+.maincon .container video{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.maincon .container :hover{
+    filter: grayscale(0);
+}
+
+.gallery h1,h3
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.gallery .content
+{
+    padding: 50px 50px 0px 50px;
+    margin: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+    #row3 , #row4
+    {
+        display: none;
+    }
+}
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+    #row3 , #row4
+    {
+        display: none;
+    }
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) 
+{
+    #row3 , #row4
+    {
+        display: block;
+    }
+} 
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+    #row3 , #row4
+    {
+        display: block;
+    }
+} 
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+    #row3 , #row4
+    {
+        display: block;
+    }
+}

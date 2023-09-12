@@ -1,0 +1,425 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar 
+{
+    display: none; 
+}
+
+/* Left side of the website */
+
+.left_side
+{
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    background-color: #f0f8ff !important;
+    background-color: rgb(88, 168, 238);
+    z-index: 1;
+    text-align: center;
+}
+
+.left_side .profile_pic
+{
+    margin-top: 70px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+@keyframes slide {
+    from{left : -100px}
+    to{left : 0px}
+}
+
+/*
+.left_side b{
+    letter-spacing: 0px;
+    animation: 3s infinite spaces linear;
+}
+
+@keyframes spaces {
+    0%{letter-spacing: 0px;}
+    25%{letter-spacing: 4px;}
+    50%{letter-spacing: 8x;}
+    75%{letter-spacing: 4px;}
+    100%{letter-spacing: 0px;}
+}
+*/
+
+.left_side li a
+{
+    text-decoration: none;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.left_side li a:hover
+{
+    color: blue;
+    text-decoration: underline;
+}
+
+.left_side li
+{
+    list-style: none;
+    margin-top: 10px;
+}
+
+/* End of left side of the list */
+
+.right_side 
+{
+    width: 100%;    
+    overflow-y: hidden;
+}
+
+.right_side_inner
+{
+    width: 73.5%;
+    position: relative;
+    float: right;
+    overflow-y: hidden;
+}
+
+/* End of Right side */
+
+
+/* Parallax */
+
+.parallax 
+{
+    background-image: url("../background/bg3.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+}
+
+.parallax .content
+{
+    width: 80%;
+    height: 200px;
+    z-index: 1;
+    margin: auto;
+    color :#333;
+    text-shadow: 2px 2px 2px 2px white;
+    /*animation: appear 3s ease;*/
+}
+
+.parallax .content button
+{
+    width: 40%;
+    height: 40px;
+    margin: 20px 0px;
+    background-color: transparent;
+    border-color: #333;
+}
+
+#apper-animation
+{
+    opacity: 0;
+}
+
+button{
+cursor: pointer;
+}
+
+@keyframes appear 
+{
+    from{opacity: 0;}
+    to{opacity: 1;}    
+}
+
+/* End of first Parallax */
+
+/* Parallax 2 */
+
+.parallax2
+{
+    background-image: url("../background/83106.jpg");
+    min-height: 200px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  
+.column {
+    flex: 20%;
+    margin: 20px;
+    height: 200px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.column h1
+{
+    padding-top: 30px;
+}
+
+/* End of parallax 2 */
+
+.testimonial
+{
+    width: 300px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    
+    padding: 50px;
+    display: none;
+
+    animation: message ease 3s;
+}
+
+.testimonial img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 1px solid #333;
+}
+
+.testimonial p{
+    background-color: #eae8e8;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 25px;
+    opacity: 0.9;
+    border: 1px solid #333;
+}
+
+@keyframes message {
+    from{right: -330px;}
+    to{right:0px ;} 
+}
+
+
+/* naviagtion bar */
+.navbar
+{
+    width: 100%;
+    height: auto;
+}
+
+.navbar .content img
+{
+    width: 50px;
+    height: 50px;
+    padding: 25px;
+    border-radius: 50%;
+}
+
+.navbar .options
+{
+    list-style-type: none;
+}
+
+.navbar .options li
+{
+    padding: 10px;
+    font-size: 25px;
+    border-top: 1px solid #333;
+    padding: 20px 50px;
+}
+
+.navbar .options li a
+{
+    text-decoration: none;
+    color: #333;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+    .left_side
+    {
+        display: none;
+    }
+
+    .right_side_inner
+    {
+        width: 100%;
+    }
+
+    .parallax .content
+    {
+        font-size: 10px;
+    }
+
+    .column
+    {
+        flex: 50%;
+    }
+
+    .end
+    {
+        font-size: 10px;
+        padding: 20px 50px;
+    }
+
+    .navbar .content .option
+    {
+        width: 50px;
+        height: 50px;
+        margin: 0px 5px;
+    }
+
+    .navbar .options li
+    {   
+        font-size: 20px;
+    }
+}
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+    .left_side
+    {
+        display: none;
+    }
+
+    .right_side_inner
+    {
+        width: 100%;
+    }
+
+    .column
+    {
+        flex: 50%;
+    }
+
+    .end
+    {
+        font-size: 10px;
+        padding: 20px 50px;
+    }
+
+    .navbar .content .option
+    {
+        width: 70px;
+        height: 70px;
+        margin: 0px 15px;
+    }
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) 
+{
+    .left_side
+    {
+        display: none;
+    }
+
+    .right_side_inner
+    {
+        width: 100%;
+    }
+
+    .column
+    {
+        flex: 30%;
+    }
+
+    .end
+    {
+        font-size: 20px;
+        padding: 20px 100px;
+    }
+
+    .navbar .content .option
+    {
+        width: 70px;
+        height: 70px;
+        margin: 0px 20px;
+    }
+} 
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+    .left_side
+    {
+        display: block;
+    }
+
+    .right_side_inner
+    {
+        width: 73.5%;
+    }
+
+    .column
+    {
+        flex: 20%;
+    }
+
+    .end
+    {
+        font-size: 20px;
+    }
+
+    .navbar
+    {
+        display: none;
+    }
+} 
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+    .left_side
+    {
+        display: block;
+    }
+
+    .right_side_inner
+    {
+        width: 73.5%;
+    }
+
+    .column
+    {
+        flex: 20%;
+    }
+
+    .end
+    {
+        font-size: 20px;
+    }
+
+    .navbar
+    {
+        display: none;
+    }
+}
